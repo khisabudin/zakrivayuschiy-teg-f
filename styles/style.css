@@ -175,12 +175,12 @@ main {
 .button span {
   position: relative;
   z-index: 2;
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference;
 }
 .button .floppy-icon {
   fill: var(--text-color) ;
   stroke: var(--text-color);
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference;
 }
 .button:hover::before {
   transform: scaleX(1);
@@ -326,10 +326,10 @@ dialog {
   --core-color: red;
   --mb-color: red;
   animation:  increasing 0.3s 0.3s ease-in,
-              sparks 0.3s 0.3s ease-in;           
+              sparks 0.3s 0.3s ease-in;
 }
 @media (width <= 375px) {
-  .header__logo{
+  .header__logo {
     --header-logo-size: 49px;
   }
   .save-button {
