@@ -18,12 +18,10 @@
   --contour-color: black;
   --mb-color: transparent;
   --sparks-color: red;
-
   --core-delay: 0,03s;
   --mb-delay: 0s;
   --contour-delay: 0s;
   --contour-duration: 0,1s;
-
   --opacity: 0;
   --background-gradient: 
     repeating-linear-gradient(
