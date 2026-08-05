@@ -42,8 +42,6 @@
   --contour-color: red;
   --core-color: red;
   --mb-color: red;
-}
-.like-icon.is-liked {
   animation:  increasing 0.3s 0.1s ease-in,
               sparks 0.3s 0.3s ease-in;
 }
