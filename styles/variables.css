@@ -1,16 +1,19 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-main: 'Inter Variable';
+  --font-main: 'Inter-Variable';
   --font-accent: 'PressStart2P';
-  --weight-main: 400;
-  --weight-title: 700;
+  --weight-main: 410;
+  --weight-title: 715;
   --container-width: clamp(375px, 100%, 700px);
-  --header-logo-size: clamp(49px, 20vw, 65px);
+  --header-logo-size: clamp(49px, 9vw, 65px);
   --header-title-size: clamp(14px, 2.5vw, 23px);
-  --header-padding-block: clamp(50px, 130px, 130px);
+  --header-height: clamp( 327px,
+                          calc(327px + (368 - 327) * ((100vw - 375px) / (700 - 375))),
+                          368px);
+  --header-margin-bottom: 95px;
   --text-size: 18px;
-  --text-color: #ffffff; /* Белый цвет текста */
-  --bg-color: #ffffff;   /* Белый цвет фона кнопки */
+  --text-color: #ffffff;
+  --bg-color: #ffffff;
   --hover-bg: #000000;
   --like-color: #000000;
   --animation-fill-color: red;
@@ -18,10 +21,10 @@
   --contour-color: black;
   --mb-color: transparent;
   --sparks-color: red;
-  --core-delay: 0,03s;
+  --core-delay: 0.03s;
   --mb-delay: 0s;
   --contour-delay: 0s;
-  --contour-duration: 0,1s;
+  --contour-duration: 0.1s;
   --opacity: 0;
   --background-gradient: 
     repeating-linear-gradient(
@@ -44,4 +47,27 @@
       #e7e7e7 0.01%,
       #1a1a1a 100%
     );
+}
+.like-icon:hover {
+  --core-delay: 0;
+  --mb-delay: 0.05s;
+  --core-color: black;
+  --mb-color: black;
+}
+.like-icon:active {
+  --core-color: red;
+  --mb-color: red;
+}
+.like-icon.is-liked {
+  --contour-delay: 0.06s;
+  --contour-duration: 0.3s;
+  --contour-color: red;
+  --core-color: red;
+  --mb-color: red;
+}
+@media (width <= 376px) {
+  :root {
+  --header-logo-size: 49px;
+  --header-margin-bottom: 105px;
+}
 }
