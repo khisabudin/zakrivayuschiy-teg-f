@@ -48,23 +48,6 @@
       #1a1a1a 100%
     );
 }
-.like-icon:hover {
-  --core-delay: 0;
-  --mb-delay: 0.05s;
-  --core-color: black;
-  --mb-color: black;
-}
-.like-icon:active {
-  --core-color: red;
-  --mb-color: red;
-}
-.like-icon.is-liked {
-  --contour-delay: 0.06s;
-  --contour-duration: 0.3s;
-  --contour-color: red;
-  --core-color: red;
-  --mb-color: red;
-}
 @media (width <= 376px) {
   :root {
   --header-logo-size: 49px;

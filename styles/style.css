@@ -174,8 +174,10 @@ main {
   transform: scaleX(1);
 }
 .button:focus {
+  outline: none;
+}
+.button:focus-visible {
   box-shadow: 2px 2px 0px 0px #000;
-  outline: none;;
 }
 .card__like-button {
   position: relative;
@@ -189,6 +191,10 @@ main {
   height: 55px;
   margin-bottom: 100px;
   background-color: #fff;
+}
+.save-button .floppy-icon {
+  color: white;
+  mix-blend-mode: difference;
 }
 .button__text {
   position: relative;
@@ -294,16 +300,12 @@ dialog {
 }
 .main-body {
   fill: var(--mb-color);
-  transition: fill 0.3s var(--mb-delay);
+  transition: fill 0.3s var(--mb-delay) linear;
 }
 .sparks {
   opacity: var(--opacity);
   fill:var(--sparks-color);
 } 
-.like-icon.is-liked {
-  animation:  increasing 0.3s 0.3s ease-in,
-              sparks 0.3s 0.3s ease-in;
-}
 @media (width <= 376px) {
   .save-button {
     flex-direction: column;
